@@ -7,6 +7,7 @@ import authConfig from '../../../../config/auth';
 import { IUsersRepository } from "../../repositories/IUsersRepository";
 import { IAuthenticateUserResponseDTO } from "./IAuthenticateUserResponseDTO";
 import { IncorrectEmailOrPasswordError } from "./IncorrectEmailOrPasswordError";
+import { AppError } from "../../../../shared/errors/AppError";
 
 interface IRequest {
   email: string;
